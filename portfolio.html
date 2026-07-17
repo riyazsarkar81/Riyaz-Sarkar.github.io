@@ -1,0 +1,248 @@
+<html>
+    <title>portfolio-cards</title>
+    <head>
+        <style>
+            .portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.portfolio h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.portfolio-card {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.portfolio-card img {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+}
+
+.portfolio-card .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  height: 30vw;
+  width: 30vw;
+  background-color: #34353ba2;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.portfolio-card .overlay h3 {
+  color: #fbfbfb;
+  font-size: 24px;
+}
+
+.portfolio-card .overlay p {
+  color: #fbfbfb;
+  font-size: 16px;
+  text-align: center;
+}
+
+.portfolio-card .overlay button {
+  height: 36px;
+  width: 108px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.portfolio-card .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio button {
+  margin-top: 50px;
+  height: 48px;
+  width: 144px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.portfolio button:hover {
+  background-color: #cc9e4e;
+}
+#body {
+  background-color: aqua;
+}
+
+#y:hover{ box-shadow: 0 0px 25px white;
+ }
+
+#j:hover{ box-shadow: 0 0px 25px rgb(255, 0, 0);
+  height: 36px;
+  width: 108px;
+  background-color: #f72e2e;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  color: #0025f5;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;}
+
+#b:hover{ box-shadow: 0 0px 25px rgb(30, 0, 255);
+  height: 36px;
+  width: 108px;
+  background-color: #00ff26;
+  border: 3px solid #020202;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;}
+
+
+
+        </style>
+    </head>
+    <body id="body">
+        <section class="portfolio" id="portfolio-loc">
+            <h1><b>Portfolio</b></h1><br>
+            <Button id="j"><a href="Profile Card.html">See More</a></Button>
+            <div class="portfolio-cards">
+                <div class="portfolio-card">
+                    <img src="asset/images/aperture-vintage-HF1IO60tQdc-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Amazon Scrapper</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                        <button id="y"><a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=674893540034&hvpos=&hvnetw=g&hvrand=5155599311744805348&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061838&hvtargid=kwd-64107830&hydadcr=14452_2316413&gad_source=1">See More -></a></button>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="asset/images/martin-martz-3_x1FRGAEwY-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Facebook Scrapper</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                         <button id="y"><a href="https://www.facebook.com">See More -></a></button>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="asset/images/vimal-s-bVplevb7Bhk-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Google Scrapper</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                         <button id="y"><a href="https://www.google.co.in/">See More -></a></button>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="asset/images/warren-umoh-K7M7dQO-HrA-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Twitter Scrapper</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                         <button id="y"><a href="https://twitter.com/?lang=en">See More -></a></button>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="asset/images/warren-umoh-pnMjGMOs2Xw-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h3>LinkedIn Scrapper</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                        <button id="y"><a href="https://in.linkedin.com/">See More -></a></button>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="asset/images/warren-umoh-VL12rhr4mi0-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h3>YouTube Scrapper</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                          <button id="y"><a href="https://www.youtube.com/">See More -></a></button> 
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                  <img src="asset/images/photo-1637792566284-67454a001370.avif" alt="">
+                  <div class="overlay">
+                      <h3>Instagram Scrapper</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                       <button id="y"><a href="https://www.instagram.com/">See More -></a></button>
+                  </div>
+              </div>
+              <div class="portfolio-card">
+                <img src="asset/images/photo-1675981004381-6305f7dd07fe2.avif" alt="">
+                <div class="overlay">
+                    <h3>Whatsapp Scrapper</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                    <button id="y"><a href="https://web.whatsapp.com/">See More -></a></button>
+                </div>
+            </div>
+            <div class="portfolio-card">
+              <img src="asset/images/photo-1657215373362-3183c0495f85 3.jpeg" alt="">
+              <div class="overlay">
+                  <h3>Telegram Scrapper</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                   <button id="y"><a href="https://web.telegram.org/">See More -></a></button>
+              </div>
+          </div>
+          <div class="portfolio-card">
+            <img src="asset/images/photo-1656926208217-8e933d05160f 4.jpeg" alt="">
+            <div class="overlay">
+                <h3>Wix Scrapper</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+                 <button id="y"><a href="https://www.wix.com/">See More -></a></button>
+            </div>
+        </div>
+        <div class="portfolio-card">
+          <img src="asset/images/photo-1637792566284-67454a001370.avif" alt="">
+          <div class="overlay">
+              <h3>WeChat Scrapper</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+               <button id="y"><a href="https://www.wechat.com/">See More -></a></button>
+          </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="asset/images/kk.jpeg" alt="">
+        <div class="overlay">
+            <h3> Snapchat Scrapper</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
+            <button id="y"><a href="https://www.snapchat.com/">See More -></a></button>
+        </div>
+        
+    </div>
+            </div>
+            <Button id="b"><a href="Riyaz Website.html">Back</a></Button>
+        </section>
+    </body>
+</html>
